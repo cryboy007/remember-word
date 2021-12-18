@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tao.dao.WordDao">
+
+    <resultMap type="com.tao.entity.Word" id="WordMap">
+        <result property="id" column="id" jdbcType="INTEGER"/>
+        <result property="learningWord" column="learning_word" jdbcType="VARCHAR"/>
+        <result property="explaination" column="explaination" jdbcType="VARCHAR"/>
+        <result property="pronunciation" column="pronunciation" jdbcType="VARCHAR"/>
+        <result property="sentence" column="sentence" jdbcType="VARCHAR"/>
+        <result property="phonogram" column="phonogram" jdbcType="VARCHAR"/>
+        <result property="nature" column="nature" jdbcType="VARCHAR"/>
+        <result property="sentenceExp" column="sentence_exp" jdbcType="VARCHAR"/>
+        <result property="addTime" column="add_time" jdbcType="TIMESTAMP"/>
+        <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+        <result property="wordType" column="word_type" jdbcType="INTEGER"/>
+    </resultMap>
+</mapper>
+
